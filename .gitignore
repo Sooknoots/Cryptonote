@@ -1,0 +1,120 @@
+# Cryptonote .gitignore - Safe for Public Repository
+
+# Sensitive cryptographic files - NEVER commit these
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+certs/
+**/certs/
+**/certificates/
+
+# Private keys and certificates
+server.key
+server.crt
+ca.crt
+private/
+keys/
+
+# Encrypted files
+*.enc
+notes.enc
+
+# User-specific configuration
+user_config.json
+config/local_config.json
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+*.exe
+build_exe.bat
+build_obfuscated.bat
+build_master.bat
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+log.txt
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Test files
+test1
+test_*/
+tests/__pycache__/
+
+# Distribution files (keep source, exclude built binaries)
+release/
+dist/
+build/
+
+# Node modules (if any)
+node_modules/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# API keys and secrets
+.env
+.env.local
+.env.production
+secrets.json
+config/secrets/
+
+# Backup files
+*.bak
+*.backup
+*~
