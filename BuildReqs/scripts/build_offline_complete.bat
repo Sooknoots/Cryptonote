@@ -4,6 +4,20 @@ echo    Cryptonote Complete Offline Build
 echo ========================================
 echo.
 
+REM 🔒 CRITICAL SECURITY CHECK - Run before any build process
+echo 🔒 Running pre-build security validation...
+call "%~dp0..\..\..\prebuild_security_check.bat"
+if %errorlevel% neq 0 (
+    echo.
+    echo ❌ BUILD ABORTED: Security violations detected
+    echo ❌ Fix security issues before building
+    echo.
+    pause
+    exit /b 1
+)
+echo ✅ Security validation passed - proceeding with build
+echo.
+
 echo Building Cryptonote with complete offline capabilities...
 echo.
 

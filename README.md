@@ -47,17 +47,44 @@
 - **Context-Aware Prompts** - AI understands your notes and writing style
 
 ### 💻 User Experience
-- **Beautiful Dark Theme** - Modern, secure interface with CustomTkinter
-- **Post-It Board UI** - Visual card-based note management
-- **Clipboard History** - Access previously copied content
-- **Screen Capture** - Built-in screenshot integration
-- **File Attachments** - Attach documents, images, and references
+### 💻 Modern Interface Redesign
+- **3-Panel Layout**: Navigation sidebar, main content, and quick actions panel
+- **Smart Search**: Real-time search with advanced filtering
+- **Multiple View Modes**: Card view, List view, and Compact view for different use cases
+- **Theme System**: Light/Dark themes with premium auto-switching
+- **Responsive Design**: Adapts to different screen sizes and resolutions
+- **Intuitive Navigation**: Sidebar with quick filters and organization tools
+- **Status Bar**: System status, AI leaderboard ticker, and license information
+- **Welcome Guide**: Built-in onboarding for new users
+
+### 🏆 AI Competition Features
+- **P2P Leaderboard** - Compete with peers on AI inference speed
+- **Opt-in Sharing** - Privacy-first metric sharing with user consent
+- **Live Rankings** - Animated ticker showing top 10 performers
+- **Performance Tracking** - TPS statistics for all AI providers
 
 ### 🌐 Offline-First Design
 - **Zero Internet Dependency** - Works anywhere, anytime
 - **No Auto-Updates** - You control when and what gets updated
 - **Portable Application** - Single executable file
 - **Cross-Platform Ready** - Windows, macOS, Linux support
+
+### ☁️ Automatic Backup Management
+- **Google Drive Integration** - Secure cloud backup with OAuth2 authentication
+- **Automatic Sync** - Checks for newer backups on startup and downloads automatically
+- **Version Control** - Keeps last 5 backup versions in temporary storage
+- **Conflict Resolution** - Always uses the most recent version across devices
+- **Offline Fallback** - Works without internet, syncs when connection available
+
+### 💳 Premium Features & Licensing
+- **PayPal Integration** - Secure payment processing for AI tokens and licenses
+- **Manual License Keys** - Direct license key entry for development and testing
+- **Token Management** - Purchase and track AI usage tokens
+- **Lifetime Licenses** - One-time payments for permanent access
+- **Advanced Clipboard Manager** - Premium clipboard history with Copilot integration
+- **Copilot Note Editing** - Use Windows Copilot to modify and improve notes
+- **Smart Text Suggestions** - AI-powered writing assistance and improvements
+- **Windows Copilot Integration** - Voice-activated AI assistance (premium)
 
 ---
 
@@ -138,6 +165,65 @@ python Gui.py
 - **Content Suggestions**: Smart recommendations based on context
 - **Code Assistance**: Programming help and code review
 - **Research Support**: Summarization and analysis tools
+
+### Token Verification System
+- **Fair Usage**: Tokens only deducted after successful AI inference
+- **Error Protection**: No charges for failed API calls or empty responses
+- **Transparent Tracking**: Real-time token balance and usage statistics
+- **Multi-Provider Support**: Consistent verification across Ollama and OpenAI
+
+### P2P AI Leaderboard
+- **Performance Competition**: Compete with other users on AI inference speed
+- **Opt-in Privacy**: Share metrics only with explicit permission
+- **Real-time Rankings**: Live updates of top 10 fastest users
+- **Network Discovery**: Automatic peer discovery on local networks
+- **Background Service**: Runs silently when enabled, no impact on performance
+
+---
+
+## 🎨 Interface Guide
+
+### Layout Overview
+```
+┌─────────────────────────────────────────────────┐
+│ [📝 Cryptonote] [✨ New Note] [📸 Capture] ...    │ ← Top Toolbar
+├─────────────┬───────────────────────────────────┬─────────────┐
+│             │                                   │             │
+│  📂 Nav     │        📄 Notes Display           │  ⚡ Actions  │
+│  🔍 Filters │        🔍 Search Bar              │  🤖 AI       │
+│             │        [Card/List/Compact View]   │             │
+│             │                                   │             │
+├─────────────┴───────────────────────────────────┴─────────────┤
+│ 🔗 Connected 💾 Backed up [🏆 Leaderboard] ⭐ Free │ ← Status Bar
+└─────────────────────────────────────────────────┘
+```
+
+### Navigation Sidebar
+- **📄 All Notes**: View complete note collection
+- **🕒 Recent**: Notes modified in the last 7 days
+- **⭐ Favorites**: Important starred notes
+- **🔍 Smart Search**: Real-time content filtering
+- **🏷️ Tag Filter**: Filter by specific tags
+- **📊 Sort Options**: Newest/Oldest, Alphabetical
+- **👁️ View Modes**: Card, List, or Compact display
+
+### Search & Discovery
+- **Instant Results**: Search updates as you type
+- **Multi-Field Search**: Title, content, and tags
+- **Tag-Based Filtering**: Sidebar tag filter
+- **Advanced Queries**: Complex search patterns supported
+
+### View Modes
+- **Card View**: Visual grid with previews and metadata
+- **List View**: Compact list with inline previews
+- **Compact View**: Minimal space usage for large collections
+
+### Quick Actions Panel
+- **💾 Backup**: Google Drive synchronization
+- **📋 Clipboard**: Content capture and history
+- **🔧 Services**: System status monitoring
+- **🤖 AI Actions**: Premium AI-powered features
+- **📝 Prompts**: AI prompt library access
 
 ---
 
@@ -223,6 +309,70 @@ ollama pull llama2
 # Configure in Cryptonote
 # Settings → AI → OpenAI API Key → Enter Key
 # Purchase tokens via integrated PayPal
+```
+
+### Backup Setup
+
+#### Google Drive Integration
+```bash
+# 1. Create Google Cloud Project
+# Visit: https://console.cloud.google.com/
+# Create new project → APIs & Services → Credentials
+
+# 2. Enable Google Drive API
+# APIs & Services → Library → Search "Google Drive API" → Enable
+
+# 3. Create OAuth2 Credentials
+# Credentials → Create Credentials → OAuth 2.0 Client IDs
+# Application type: Desktop application
+# Download JSON file as 'client_secret.json'
+
+# 4. Configure in Cryptonote
+# Place 'client_secret.json' in application directory
+# Settings → Backup → Upload to Drive (first time will prompt OAuth)
+
+# 5. Automatic Features
+# - Checks for newer backups on startup
+# - Downloads latest version automatically
+# - Keeps last 5 backup versions locally
+# - Syncs across multiple devices
+```
+
+#### Audio Controls Setup
+```bash
+# Volume Control (Free)
+# Always available - system volume slider and buttons in the sliding tray
+
+# Media Remote Controls (Premium)
+# Spotify/YouTube remote controls require a lifetime license
+# Access via the sliding tray at the bottom-right of the main window
+# Switch between Spotify and YouTube modes with the ◀ button
+# Features:
+# - Previous/Play-Pause/Next track buttons
+# - Automatic media window detection and control
+# - Visual feedback for current status
+
+# Windows Copilot Integration
+# Big blue "🤖 Copilot" button in the header activates Windows 11 Copilot
+# Functions like "Hey Copilot" voice activation
+# Requires Windows 11 with Copilot enabled
+```
+
+#### Licensing & Payments
+```bash
+# PayPal Integration (Production)
+# Set environment variables:
+# PAYPAL_CLIENT_ID=your_production_client_id
+# PAYPAL_CLIENT_SECRET=your_production_client_secret
+# PAYPAL_ENVIRONMENT=production
+
+# For Development/Testing:
+# PAYPAL_ENVIRONMENT=sandbox
+# Use PayPal sandbox credentials
+
+# Manual License Keys:
+# Enter license keys directly in Settings → Licensing
+# Supports both lifetime licenses and token purchases
 ```
 
 ### Security Settings

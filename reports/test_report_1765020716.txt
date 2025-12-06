@@ -1,0 +1,16 @@
+
+Cryptonote Test Report
+=======================
+
+Test Execution Time: 2025-12-06 05:31:56
+
+Results Summary:
+- GUI Tests: FAIL
+- Unit Tests: FAIL
+- Performance Tests: FAIL
+
+Overall Status: SOME TESTS FAILED
+
+Recommendations:
+- Fix failing tests before release
+- Review GUI performance issues

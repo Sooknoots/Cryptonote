@@ -16,3 +16,7 @@ pytest
 flask
 google-auth-httplib2
 google-auth-oauthlib
+pycaw
+pygetwindow
+pyautogui
+comtypes

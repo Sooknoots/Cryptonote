@@ -108,7 +108,24 @@ Special thanks to:
 - **Discussions**: [GitHub Discussions](https://github.com/Sooknoots/Cryptonote/discussions)
 - **Documentation**: [Full User Guide](docs/User_Guide.md)
 
-## 🔄 Future Plans
+## 🔄 Recent Updates (Post-v1.0.0)
+
+### 🤖 Enhanced AI Features
+- **Token Verification System**: AI tokens are now only deducted after successful inference, preventing charges for failed requests or empty responses
+- **Improved Error Handling**: Better handling of API failures and network issues for both Ollama and OpenAI integrations
+
+### 🏆 P2P AI Leaderboard
+- **Real-time Performance Competition**: Opt-in P2P network for sharing AI inference metrics
+- **Animated Leaderboard Ticker**: Live scrolling display of top 10 fastest AI users at the bottom of the application
+- **Privacy-First Design**: Users must explicitly opt-in to share performance data
+- **Automatic Peer Discovery**: Seamless connection with other Cryptonote instances on the local network
+
+### ⚙️ Settings Enhancements
+- **AI Leaderboard Toggle**: New setting to enable/disable metric sharing for the global leaderboard
+- **Background Service Management**: P2P sharing runs as a background daemon thread when enabled
+- **Persistent Preferences**: All new settings are saved and restored across application sessions
+
+---
 
 - Mobile applications (iOS/Android)
 - Web-based interface
