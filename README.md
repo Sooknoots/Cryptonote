@@ -1,0 +1,2 @@
+# Cryptonote
+A Clipboard Suite
